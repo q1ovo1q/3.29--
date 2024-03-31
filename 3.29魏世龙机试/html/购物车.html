@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/购物车.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-title" id="J_miniHeaderTitle">
+                <h2 style="font-size: 30px; text-align: center;">购物车</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="box">
+        <h2 class="box_head"><span>双十一买买买</span></h2>
+        <!-- 商品渲染进去 -->
+        <ul>
+        </ul>
+    </div>
+
+
+    <div id="car" class="car">
+        <div class="head_row hid">
+            <div class="check left"> <i onclick="checkAll()">×</i></div>
+            <div class="img left"> 全选</div>
+            <div class="name left">商品名称</div>
+            <div class="price left">单价</div>
+            <div class="number left">数量</div>
+            <div class="subtotal left">小计</div>
+            <div class="ctrl left">操作</div>
+        </div>
+    </div>
+    <div id="cart"></div>
+    <div id="sum_area">
+        <div id="pay">去结算</div>
+        <div id="pay_amout">合计：<span id="price_num">0</span>元</div>
+       
+    </div>
+    <script src="../js/购物车.js"></script>
+</body>
+
+</html>
